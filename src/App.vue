@@ -4,6 +4,9 @@
   <Home data="We are thrilled to have you visit us"/>
   <Users/>
   <products></products>
+  <h1 v-once>{{ name }}</h1>
+  <h1>{{ name }}</h1>
+  <button v-on:click="func()">Click</button>
 </div>
 </template>
 
@@ -17,7 +20,17 @@ export default {
     Home,
     Users,
     Products
-  }
+  },
+  data() {
+    return {
+      name: "Job"
+    }
+  },
+  methods: {
+    func(){
+      this.name = "Owonubi Job Sunday"
+    }
+  },
 }
 </script>
 <style scoped>

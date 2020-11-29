@@ -18,17 +18,5 @@ export default {
             this.show = !this.show
         }
     },
-    data(){
-        return{
-            show:false,
-            users:[
-                {id:1,name:"Owonubi Job",email:'jobowonubi@gmail.com'},
-                {id:2,name:"Ibrahim Faruq",email:'faruk@gmail.com'},
-                {id:3,name:"Akinola Roseline",email:'rose@gmail.com'},
-                {id:4,name:"Owonubi Solomon",email:'owonubi@gmail.com'},
-                {id:5,name:"Akinola Peter",email:'akinola@gmail.com'},
-                ]
-        }
-    }
 }
 </script>
