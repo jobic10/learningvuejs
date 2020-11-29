@@ -1,15 +1,22 @@
 <template>
-    <div class="home">
-        <h1 align='center'>Welcome To Our Official Website</h1>
-        <h4>{{ data }}</h4>
-        <button v-on:click="toggleDisplay()">Toggle</button>
-        <h1 v-if="show">Lights On</h1>
-        <h1 v-else>Lights Out</h1>
-</div>
+    <div class="child">
+    <table border="1">
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Email</th>
+</tr>
+<tr v-for="user in users" :key="user.email">
+<td>{{ user.id }}</td>
+<td>{{ user.name }}</td>
+<td>{{ user.email }}</td>
+</tr>
+</table>   
+    </div>
 </template>
 <script>
 export default {
-    name: 'Home',
+    name: 'Users',
     props:{
         data:String
     },
@@ -32,3 +39,13 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+.child{
+    background-color: rgb(145, 121, 91);
+    height: auto;
+    width: auto;
+    padding: 30px;
+    margin: 20px;
+}
+</style>

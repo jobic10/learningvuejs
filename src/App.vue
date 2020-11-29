@@ -1,25 +1,29 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <Home data="Owonubi Job Sunday"/>
+<div class="body">
+  <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+  <Home data="We are thrilled to have you visit us"/>
+  <Users/>
+  <products></products>
+</div>
 </template>
 
 <script>
 import Home from './components/Home'
+import Users from '@/components/Users'
+import Products from './components/Products.vue'
 export default {
   name: 'App',
   components: {
-    Home
+    Home,
+    Users,
+    Products
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped>
+.body{
+background-color: #70dab6;
+height: 1000px;
 }
 </style>
+
