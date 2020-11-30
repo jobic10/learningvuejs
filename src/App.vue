@@ -7,6 +7,7 @@
   <h1 v-once>{{ name }}</h1>
   <h1>{{ name }}</h1>
   <button v-on:click="func()">Click</button>
+  <h4>{{ isValid? "Yes":"No" }}</h4>
 </div>
 </template>
 
@@ -23,7 +24,8 @@ export default {
   },
   data() {
     return {
-      name: "Job"
+      name: "Job",
+      'isValid': false
     }
   },
   methods: {

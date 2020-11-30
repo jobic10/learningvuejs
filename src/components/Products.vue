@@ -1,11 +1,18 @@
 <template>
     <div class="child">
-        <h1>Products</h1>
+        <h1 v-bind:style="{color:colorName}">Products</h1>
+        <p v-bind:class="{display:show}">Our products...</p>
     </div>
 </template>
 <script>
 export default {
-    name: "Products"
+    name: "Products",
+    data(){
+        return {
+            colorName:'magenta',
+            show:true
+        }
+    }
 }
 </script>
 
@@ -16,5 +23,8 @@ export default {
     width: auto;
     padding: 30px;
     margin: 20px;
+}
+.display{
+    background-color: darkslategray;
 }
 </style>
