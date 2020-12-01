@@ -2,6 +2,7 @@
 <div class="body">
   <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
   <Home data="We are thrilled to have you visit us"/>
+  <bind/>
   <Users/>
   <products></products>
   <h1 v-once>{{ name }}</h1>
@@ -15,12 +16,14 @@
 import Home from './components/Home'
 import Users from '@/components/Users'
 import Products from './components/Products.vue'
+import Bind from '@/components/Bind'
 export default {
   name: 'App',
   components: {
     Home,
     Users,
-    Products
+    Products,
+    Bind
   },
   data() {
     return {
