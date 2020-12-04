@@ -1,11 +1,6 @@
 <template>
 <div class="body">
-  <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-  <!-- <Home data="We are thrilled to have you visit us"/> -->
   <child v-on:change-title="updateText($event)" />
-  <!-- <bind/> -->
-  <!-- <Users/> -->
-  <!-- <products></products> -->
   <h1 v-once>{{ name }}</h1>
   <h1>{{ name }}</h1>
   <button v-on:click="func()">Click</button>
@@ -14,18 +9,10 @@
 </template>
 
 <script>
-// import Home from './components/Home'
-// import Users from '@/components/Users'
-// import Products from './components/Products.vue'
-// import Bind from '@/components/Bind'
 import Child from '@/components/Child'
 export default {
   name: 'App',
   components: {
-    // Home,
-    // Users,
-    // Products,
-    // Bind,
     Child
   },
   data() {
