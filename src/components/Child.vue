@@ -10,6 +10,18 @@ export default {
         updateTitle(){
             this.$emit('change-title', 'Child Props Has Been Passed!')
         }
+    },
+    beforeCreate: function(){
+        alert("BeforeCreated")
+    },
+    created: function(){
+        alert('Created')
+    },
+    beforeMount: function(){
+        alert('beforeMount')
+    },
+    mounted: function(){
+        alert('Mounted')
     }
 }
 </script>
