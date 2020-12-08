@@ -22,6 +22,7 @@ export default {
     },
     mounted: function(){
         alert('Mounted')
-    }
+    },
+
 }
 </script>

@@ -29,6 +29,12 @@ export default {
     this.name = title
     }
   },
+      beforeUpdate: function() {
+        alert('Before Updated')
+    },
+    updated: function(){
+        alert('updated')
+    }
 }
 </script>
 <style scoped>
